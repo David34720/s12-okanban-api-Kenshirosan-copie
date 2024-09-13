@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title -->
+    <title>oKanban</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='24px' height='24px' stroke-width='1.5' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' color='%23000000'%3E%3Cpath d='M3 3.6V20.4C3 20.7314 3.26863 21 3.6 21H20.4C20.7314 21 21 20.7314 21 20.4V3.6C21 3.26863 20.7314 3 20.4 3H3.6C3.26863 3 3 3.26863 3 3.6Z' stroke='%23000000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3Cpath d='M6 6L6 16' stroke='%23000000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3Cpath d='M10 6V9' stroke='%23000000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3Cpath d='M14 6V13' stroke='%23000000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3Cpath d='M18 6V11' stroke='%23000000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3C/svg%3E">
+
+    <!-- Bulma -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Custom JS -->
+    <script defer src="./assets/js/index.js"></script>
+</head>
+
+<body class="container is-fluid my-6">
+  <header class="my-5">
+    <h1 class="title has-text-centered is-1">oKanban</h1>
+    <button class="button is-info is-outlined" id="btn-add"><i class="fas fa-plus mr-2"></i>Ajouter une liste</button>
+  </header>
+
+  <main id="lists-container">
+    <!-- List -->
+    <section class="message is-info">
+
+      <div class="message-header">
+        <div>Perso</div>
+        <span class="icon is-clickable"><i class="fas fa-plus"></i></span>
+      </div>
+
+      <div class="message-body">
+        <!-- Card -->
+        <article class="card">
+          <div class="card-header">
+            <div class="card-header-title has-text-weight-medium">Faire les courses</div>
+            <div class="card-header-icon">
+              <span class="icon has-text-success"><i class="fas fa-pencil-alt"></i></span>
+              <span class="icon has-text-danger ml-2"><i class="fas fa-trash-alt"></i></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card -->
+        <article class="card">
+          <div class="card-header">
+            <div class="card-header-title has-text-weight-medium">Nourrir le chat</div>
+            <div class="card-header-icon">
+              <span class="icon has-text-success"><i class="fas fa-pencil-alt"></i></span>
+              <span class="icon has-text-danger ml-2"><i class="fas fa-trash-alt"></i></span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- List -->
+    <section class="message is-info">
+
+      <div class="message-header">
+        <div>O'clock</div>
+        <span class="icon is-clickable"><i class="fas fa-plus"></i></span>
+      </div>
+
+      <div class="message-body">
+        <!-- Card -->
+        <article class="card">
+          <div class="card-header">
+            <div class="card-header-title has-text-weight-medium">Mettre en place les formulaires HTML</div>
+            <div class="card-header-icon">
+              <span class="icon has-text-success"><i class="fas fa-pencil-alt"></i></span>
+              <span class="icon has-text-danger ml-1"><i class="fas fa-trash-alt"></i></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card -->
+        <article class="card">
+          <div class="card-header">
+            <div class="card-header-title has-text-weight-medium">Apprendre à utiliser fetch</div>
+            <div class="card-header-icon">
+              <span class="icon has-text-success"><i class="fas fa-pencil-alt"></i></span>
+              <span class="icon has-text-danger ml-1"><i class="fas fa-trash-alt"></i></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card -->
+        <article class="card">
+          <div class="card-header">
+            <div class="card-header-title has-text-weight-medium">Brancher l'API</div>
+            <div class="card-header-icon">
+              <span class="icon has-text-success"><i class="fas fa-pencil-alt"></i></span>
+              <span class="icon has-text-danger ml-1"><i class="fas fa-trash-alt"></i></span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- List -->
+    <section class="message is-info">
+
+      <div class="message-header">
+        <div>Liste des anniversaires</div>
+        <span class="icon is-clickable"><i class="fas fa-plus"></i></span>
+      </div>
+
+      <div class="message-body">
+        <!-- Card -->
+        <article class="card">
+          <div class="card-header">
+            <div class="card-header-title has-text-weight-medium">Maman le 01/01/1970</div>
+            <div class="card-header-icon">
+              <span class="icon has-text-success"><i class="fas fa-pencil-alt"></i></span>
+              <span class="icon has-text-danger ml-1"><i class="fas fa-trash-alt"></i></span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <dialog>
+    
+  </dialog>
+</body>
+
+
+<!-- Template pour le formulaire de la fenêtre de dialogue -->
+<template id="dialog-form-template">
+  <div class="dialog-title">
+      <div class="dialog-head is-radiusless">
+        <p class="dialog-title">TITRE_DE_LA_MODALE</p>
+        <button class="delete close" type="button" aria-label="close"></button>
+      </div>
+
+      <div class="moda-body is-radiusless">
+        <form id="dialog-form">FORMULAIRE_DE_MODALE</form>
+      </div>
+
+      <div class="dialog-foot is-radiusless">
+        <button class="button is-success"></button>
+        <button class="button close" type="button">Annuler</button>
+      </div>
+  </div>
+</template>
+
+
+<!-- Template pour la modale de message -->
+<template id="dialog-message-template">
+  <div class="dialog-title">
+    <form>
+      <div class="dialog-head is-radiusless">
+        <p class="dialog-title">TITRE_DE_LA_MODALE</p>
+        <button class="delete close" type="button" aria-label="close"></button>
+      </div>
+
+      <div class="moda-body is-radiusless">
+        <p id="dialog-message">MESSAGE_DE_LA_MODALE</p>
+      </div>
+
+      <div class="dialog-foot is-radiusless">
+        <button class="button close" type="button">Ok</button>
+      </div>
+    </form>
+  </div>
+</template>
+
+<!-- Template pour la modale d'ajout de liste -->
+<template id="form-list-template">
+  <label for="add-list-title" class="label">Titre</label>
+  <input id="add-list-title" class="input" type="text" name="title" placeholder="Titre de la liste">
+</template>
+
+
+<!-- Template pour une liste -->
+<template id="list-template">
+  <section class="message is-info">
+    <div class="message-header">
+      <div class="list-title">TITRE_DE_LA_LISTE</div>
+      <span class="icon is-clickable"><i class="fas fa-plus"></i></span>
+    </div>
+
+    <div class="message-body">
+      <!-- Cards go here -->
+    </div>
+  </section>
+</template>
+
+<!-- Template pour une carte -->
+<template id="card-template">
+  <article class="card">
+    <div class="card-header">
+      <div class="card-header-title has-text-weight-medium">CONTENU_DE_LA_CARTE</div>
+      <div class="card-header-icon">
+        <span class="icon has-text-success"><i class="fas fa-pencil-alt"></i></span>
+        <span class="icon has-text-danger ml-2"><i class="fas fa-trash-alt"></i></span>
+      </div>
+    </div>
+  </article>
+</template>
+
+
+
+
+</html>
